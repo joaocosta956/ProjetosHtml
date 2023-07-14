@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400&family=Poppins:wght@100;400&family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+}
+
+/* .vazia {
+    width: 300px;
+    height: 100%;
+} */
+
+.sidebar {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%; /* Defina a largura desejada para a barra lateral */
+    height: 100%; /* Defina a altura desejada para a barra lateral */
+    background-color: black; /* Defina a cor de fundo desejada */
+    /* Outras propriedades de estilo da barra lateral */
+  }
+
+.principal {
+    width: 70%;
+    
+}
+
+.header {
+    position: sticky;
+    margin: 15px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-head a{
+    font-size: 32px;
+    color: #121212;
+}
+
+.head-left {
+    align-items: center;
+    display: flex;
+}
+
+.head-left a {
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: #121212;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.head-left .icon {
+    border: 3px solid black;
+    background-image: url(images/Spidey\ Icon.jpg);
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.conteudo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.dentro-conteudo {
+    width: 100%;
+}
+
+.s-pl {
+    width: 100%;
+    display: flex;
+}
+
+.sua-playlist {
+    overflow: hidden;
+    display: flex;
+    border-radius: 8px;
+    background-color: #121212;
+}
+
+.head-playlist h2 {
+    color: white;
+}
+
+.sua-playlist img {
+    height: 100%;
+
+}
+.img-playlist {
+    width: 70px;
+    height: 70px;
+}
+
+.btn-playlist {
+    padding: 15px;
+    align-items: center;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.playlist-cnt {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.btn-play {
+    justify-content: right;
+}
+
+.background-conteudo {
+    position: absolute;
+    margin-top: -70px;
+    height: 300px;
+    width: 70%;
+    background-color: rgb(152, 48, 56);
+    z-index: -1;
+}
+
+.cnt-msc {
+    width: 100%;
+    height: 100%;
+}
+
+.cnt {
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.mix-ouvido {
+    width: 100%;
+    padding: 16px;
+}
+
+.img-mix img {
+    width: 100%;
+}
+
+.menu {
+    margin: 10px;
+}
+
+.menu p {
+    color: white;
+}
+
+.menu ul {
+    background-color: blue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.menu li {
+   padding: 5px;
+   list-style: none;
+}
+
+.menu li a {
+    height: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a span {
+    margin-left: 15px;
+}
+
+.side {
+    height: 104px;
+    width: 100%;
+}
+
+.biblioteca {
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    height: 100%;
+    padding-top: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+
+.bibli-side {
+    vertical-align: middle;
+    display: flex;
+    margin: 5px 10px;
+    justify-content: space-between;
+}
+
+.bb-s {
+    
+    display: flex;
+    margin-right: 10px;
+}
+
+.bibli-side h3 {
+    font-size: 15px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.bibli-side span {
+
+}
+
+.bb-slider, .slider {
+    margin-top: 5px;
+    display: flex;
+    overflow: hidden;
+}
+
+.slider a {
+    font-size: 14px;
+    background-color: rgba(0,0,0,0.08);
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Footer */
+
+.musicas {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    bottom: 0;
+    align-items: center;
+}
+
+.img-art {
+    display: flex;
+    background-image: url(images/Cover.jpg);
+    background-size: cover;
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+}
+
+.musica-art {
+    align-items: center;
+    display: flex;
+    margin: auto 15px;
+    max-width: 100%;
+}
+
+.musicas .player {
+    margin: 0 auto;
+}
+
+.musica-art .heart {
+    margin: 0 15px;
+    color: gray;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.musica-art .nome-art h2 {
+    /* display: flex; */
+    font-size: 15px ;
+}
+
+.musica-art .nome-art {
+    height: 100%;
+    padding: 10px 15px;
+    color: white;
+}
+
+.musica-art .nome-art span {
+    font-size: 12px;
+}
+
+.som {
+    color: gray;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.som span {
+    padding-top: 7px;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.player {
+    width: 30%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    margin: 0 auto;
+}
+
+.player span {
+    display: flex;
+    font-size: 25px;
+    margin: 0 auto;
+}
+.left-buttons {
+    display: flex;
+    text-align: left;
+}
+
+.play-btn {
+    margin: 0 5px;
+}
+
+.right-buttons {
+    display: flex;
+}
+
+.right-buttons span {
+    margin-right: 15px;
+}
+
+.left-buttons span {
+    margin-left: 15px;
+}
+
+.time {
+    display: flex;
+}
+
+.time p {
+    font-size: 12px;
+    margin: 0 15px;
+}
+
+.time-bar {
+    border-radius: 3px;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 5px auto;
+}
+
+.volume-bar {
+    margin: auto 0;
+    width: 100px;
+    border-radius: 5px;
+    height: 5px;
+    background-color: white;
+}
+
